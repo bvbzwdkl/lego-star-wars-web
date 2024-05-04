@@ -374,11 +374,11 @@ body {
     max-width: 75%;
   }
   .overlay-logo {
-    max-width: 55%;
+    max-width: 85%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .salute-gif {
     max-width: 75%;
     height: auto;
