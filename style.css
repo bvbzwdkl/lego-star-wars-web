@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
   }
   
   .salute-gif {
@@ -329,6 +330,18 @@ body {
   opacity: 1;
 }
 
+.logo-container {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+
 @media screen and (max-width: 450px) {
   .salute-gif {
     max-width: 120%;
@@ -356,13 +369,7 @@ body {
   .marching-lineup {
     padding: 0px;
   }
-  .logo-container {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-  }
+
   .overlay-st {
     max-width: 75%;
   }
