@@ -411,7 +411,7 @@ body {
   .logo-container {
     position: absolute;
     top: 20px;
-    left: 50%;
+    left: 65%;
     transform: translateX(-50%);
     z-index: 5;
   }
@@ -447,9 +447,9 @@ body {
     padding: 0px;
   }
   .overlay-st {
-    max-width: 25%;
+    max-width: 15%;
   }
   .overlay-logo {
-    max-width: 25%;
+    max-width: 15%;
   }
 }
