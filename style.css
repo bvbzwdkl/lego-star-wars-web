@@ -342,43 +342,9 @@ body {
   height: auto;
 }
 
-@media screen and (max-width: 450px) {
-  .salute-gif {
-    max-width: 120%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  .logo-container {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-  }
-  .logo {
-    max-width: 160px;
-    height: auto;
-  }
-  .resizable {
-    resize: both;
-    overflow: auto;
-    max-width: 150px;
-    max-height: 300px;
-    transition: filter 0.3s ease;
-  }
-  .marching-lineup {
-    padding: 0px;
-  }
 
-  .overlay-st {
-    max-width: 75%;
-  }
-  .overlay-logo {
-    max-width: 85%;
-  }
-}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .salute-gif {
     max-width: 75%;
     height: auto;
