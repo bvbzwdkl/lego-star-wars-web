@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,9 @@
   
 </head>
 <body>
+  <div class="logo-container">
+    <img src="/img/Logo.png" alt="Logo" class="logo">
+  </div>
 
   <div id="player" style="display: none;"></div>
   <img src="/img/deathstar.png" alt="Death Star" class="deathstar">
@@ -56,6 +60,25 @@
     <button id="play-button">Enter</button>
 </div>
 
+<div class="image-container-bot">
+  <div class="image-wrapper">
+    <img src="img/BodenPalpetin.png" alt="Image 1" class="bottom-left resizable">
+    <span class="image-text">Boden Palpatine</span>
+  </div>
+  <div class="image-wrapper">
+    <img src="img/PepeMaul.png" alt="Image 2" class="bottom-left2 resizable">
+    <span class="image-text">Pepe Maul</span>
+  </div>
+  <div class="image-wrapper">
+    <img src="img/Scout.png" alt="Image 3" class="bottom-right resizable">
+    <span class="image-text">Scout</span>
+  </div>
+  <div class="image-wrapper">
+    <img src="img/STR-Rocket.png" alt="Image 3" class="bottom-right resizable">
+    <span class="image-text">Strom Trooper</span>
+  </div>
+</div>
+
 
   <div class="marching-lineup">
     <img src="/img/March.gif" alt="Marching" class="marching-gif">
@@ -83,6 +106,9 @@
     <img src="/img/March.gif" alt="Marching" class="marching-gif">
   </div>
 
+
+
+  
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="particles-config.js"></script>
   <script src="popup.js"></script>

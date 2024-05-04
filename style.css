@@ -279,3 +279,83 @@ body {
   height: auto;
   margin-bottom: 20px;
 }
+
+.image-container-bot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 50;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.resizable {
+  resize: both;
+  overflow: auto;
+  max-width: 300px;
+  max-height: 300px;
+  transition: filter 0.3s ease;
+}
+
+.image-wrapper:hover .resizable {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+.image-text {
+  position: absolute;
+  top: -4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .image-text {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .image-container-bot {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .image-wrapper {
+    margin-right: 10px;
+  }
+
+  .resizable {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+.logo-container {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+ 
+}
