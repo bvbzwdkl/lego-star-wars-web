@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lego Sol Werz</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div id="player" style="display: none;"></div>
+  <img src="/img/deathstar.png" alt="Death Star" class="deathstar">
+
+  <audio id="background-audio" loop>
+    <source src="Empire_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="particles-js"></div>
+  <div class="ship-container">
+    <img src="img/ship.png" alt="Flying Ship" class="flying-ship">
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img src="/img/RAID.gif" alt="March GIF" class="march-gif">
+      <p>SOCIAL :</p>
+      <div class="image-container">
+        <a href="CommingSoon.html" target="_blank"><img src="/img/chart.png" alt="DexScreener" class="popup-image"></a>
+        <a href="https://t.me/Lego_sol_werz_portal" target="_blank"><img src="/img/Telegram-Logo.png" alt="Telegram" class="popup-image"></a>
+        <a href="https://twitter.com/Legosolwerz" target="_blank"><img src="/img/X-Logo.png" alt="Twitter" class="popup-image"></a>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="content">
+    <div class="starwarsday-container">
+      <img src="img/Starwarsday.png" alt="Starwarsday" class="starwarsday">
+    </div>
+    <div class="gif-container">
+      <div class="salute-container">
+        <img src="img/Salute.gif" alt="Salute GIF" class="salute-gif">
+        
+        <button class="join-button" onclick="openPopup()">Join the Army</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay" style="display: flex;flex-direction: column;">
+    <img src="img/Logo.png" alt="Flying Ship" class="overlay-logo">
+    <img src="img/STP_Salute+Pill.png" alt="Flying Ship" class="overlay-st">
+    <button id="play-button">Enter</button>
+</div>
+
+
+  <div class="marching-lineup">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+    <img src="/img/March.gif" alt="Marching" class="marching-gif">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="particles-config.js"></script>
+  <script src="popup.js"></script>
+
+  <script src="ship-animation.js"></script>
+</body>
+</html>
