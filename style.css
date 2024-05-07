@@ -346,7 +346,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .salute-gif {
-    max-width: 75%;
+    max-width: 74%;
     height: auto;
     margin-bottom: 20px;
   }
