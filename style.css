@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
+    z-index: 9999999;
   }
   
   .salute-gif {
@@ -154,6 +155,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+
   }
   
   .popup-image {
@@ -289,7 +291,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  z-index: 50;
+  z-index: 1;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -389,11 +391,17 @@ body {
   font-family: 'Press Start 2P', cursive;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   word-break: break-all;
+ 
+  
 }
 
 
 @media screen and (max-height: 700px) {
   .resizable {
     max-width: 155px;
+  }
+
+  .image-container-bot {
+    padding: 65px;
   }
 }
