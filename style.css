@@ -25,11 +25,11 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 0px;
-    margin-top: 55px;
+    margin-top: 150px;
   }
   
   .salute-gif {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     margin-bottom: 20px;
   }
@@ -424,7 +424,10 @@ body {
     width: 325px;
     
   }
-
+  .salute-container {
+    
+    margin-top: 80px;
+  }
   .resizable {
     resize: both;
     overflow: auto;
@@ -457,6 +460,17 @@ body {
 }
 
 .salute-container p {
+  color: #FFE81F;
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  word-break: break-all;
+ 
+  
+}
+
+.salute-container p2 {
   color: #FFE81F;
   font-size: 12px;
   margin-top: 10px;
@@ -492,6 +506,7 @@ body {
 
 .salute-container {
   margin-bottom: 10px;
+  
 }
 .salute-container p {
   font-size: 8px;
