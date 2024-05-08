@@ -384,7 +384,7 @@ body {
 
 .content {
   flex: 0 0 100%;
-  padding: 20px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
