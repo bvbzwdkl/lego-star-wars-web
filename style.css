@@ -362,6 +362,11 @@ body {
     padding: 0px;
   }
 
+  .logo {
+    max-width: 150px;
+    height: auto;
+  }
+
   .logo-container {
     position: absolute;
     top: 80px;
