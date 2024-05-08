@@ -9,7 +9,7 @@ let currentIndex = 0;
 let touchStartX = 0;
 let touchEndX = 0;
 let isTouchMoved = false;
-const swipeThreshold = 20;
+const swipeThreshold = 50;
 
 prevButton.addEventListener('click', () => {
   if (currentIndex > 0) {
