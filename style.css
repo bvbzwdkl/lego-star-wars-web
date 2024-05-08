@@ -392,3 +392,8 @@ body {
 }
 
 
+@media screen and (max-height: 700px) {
+  .resizable {
+    max-width: 155px;
+  }
+}
