@@ -1,10 +1,22 @@
 function openPopup() {
-    document.getElementById("popup").style.display = "block";
-  }
+  const popup = document.getElementById('popup');
+  popup.style.display = 'block';
+  document.addEventListener('click', closePopupOutside);
+}
   
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
+function closePopup() {
+  const popup = document.getElementById('popup');
+  popup.style.display = 'none';
+  document.removeEventListener('click', closePopupOutside);
+}
+
+function closePopupOutside(event) {
+  const popup = document.getElementById('popup');
+  if (event.target === popup) {
+    closePopup();
   }
+}
+
 
 const overlay = document.getElementById('overlay');
 const playButton = document.getElementById('play-button');

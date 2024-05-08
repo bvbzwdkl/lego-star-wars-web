@@ -76,3 +76,13 @@ function updateSlider() {
     secondContent.style.display = 'block';
   }
 }
+
+function openSecondContent() {
+    currentIndex = 1;
+    updateSlider();
+  }
+
+  function openFirstContent() {
+    currentIndex = 0;
+    updateSlider();
+  }

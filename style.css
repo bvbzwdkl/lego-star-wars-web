@@ -57,11 +57,31 @@ body {
     transform: scale(0.95);
   }
 
-  .starwarsday {
-    max-width: 200px; /* Adjust the value as needed */
-    height: auto;
-    animation: starwarsday-animation 2s infinite;
+
+  .more-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
+  
+  .more-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  
+  .more-button:active {
+    background-color: #3e8e41;
+    transform: scale(0.95);
+  }
+
+
   
   @keyframes starwarsday-animation {
     0% {
@@ -369,9 +389,12 @@ body {
 }
 
 .second-content {
-  /* Styles specific to the second content section */
+  color: #FFE81F;
   display: none;
+  font-family: 'Press Start 2P', cursive;
 }
+
+
 
 .slider-nav {
   position: absolute;
