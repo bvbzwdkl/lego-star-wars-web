@@ -112,6 +112,9 @@ body {
   .gif-container {
     position: relative;
     z-index: 2;
+    top: -55px;
+    width: 900px;
+    
   }
 
   .popup {
@@ -353,6 +356,15 @@ body {
     height: auto;
     margin-bottom: 20px;
   }
+
+  .gif-container {
+    position: relative;
+    z-index: 2;
+    top: -55px;
+    width: 325px;
+    
+  }
+
   .resizable {
     resize: both;
     overflow: auto;
