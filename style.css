@@ -416,4 +416,57 @@ body {
   .image-container-bot {
     padding: 10px;
   }
+
+
+  .gif-container {
+    position: relative;
+    z-index: 2;
+    top: -55px;
+    width: 425px;
+    
+  }
+  .marching-gif {
+    width: 20px;
+    height: auto;
+}
+
+.salute-container {
+  margin-bottom: 10px;
+}
+.salute-container p {
+  font-size: 8px;
+}
+.salute-gif {
+  max-width: 25%;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.join-button {
+  font-size: 12px;
+}
+
+.overlay-st {
+  max-width: 15%;
+  margin-bottom: 0px;
+}
+
+.overlay-logo {
+  max-width: 15%;
+
+}
+
+.popup-content {
+  background-color: #000000;
+  color: #fff;
+  margin: 2% auto;
+  padding: 5px;
+  border: 1px solid #888;
+  width: 35%;
+  border-radius: 10px;
+  text-align: center;
+}
+
 }
