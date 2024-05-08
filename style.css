@@ -408,7 +408,7 @@ body {
 }
 
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 600px) {
   .resizable {
     max-width: 155px;
   }
@@ -421,7 +421,7 @@ body {
   .gif-container {
     position: relative;
     z-index: 2;
-    top: -55px;
+    top: -25px;
     width: 425px;
     
   }
@@ -438,6 +438,7 @@ body {
 }
 .salute-gif {
   max-width: 25%;
+  margin-bottom: 1px;
 }
 
 .logo {
@@ -446,6 +447,7 @@ body {
 
 .join-button {
   font-size: 12px;
+  margin-top: 5px;
 }
 
 .overlay-st {
