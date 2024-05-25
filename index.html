@@ -1,142 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="/img/lsw.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Lego Sol Werz</title>
   <link rel="stylesheet" href="style.css">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Include FontAwesome for icons (using version 6 for consistency with your request) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="https://unpkg.com/vue@next"></script>
+  <link rel="preload" href="/img/Ship.png" as="image">
+  <link rel="icon" type="img" href="/img/lsw.ico">
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Legosolwerz">
+  <meta property="og:description" content="join the lego empire to take over the solana system.">
+  <meta property="og:image" content="https://www.legosolwerz.xyz/">
+  <meta property="og:url" content="https://www.legosolwerz.xyz/">
+  <meta property="og:type" content="website"> 
 </head>
+
 <body>
-
-  <div id="player" style="display: none;"></div>
-  <img src="/img/deathstar.png" alt="Death Star" class="deathstar">
-
-  <audio id="background-audio" loop>
-    <source src="Empire_music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <div id="particles-js"></div>
-  <div class="ship-container">
-    <img src="img/ship.png" alt="Flying Ship" class="flying-ship">
+  <div class="loading-screen">
+    <video autoplay loop muted playsinline class="loading-video">
+      <source src="loading.webm" type="video/webm">
+      <source src="loading.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="loading-text">Loading...</p>
   </div>
 
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup()">&times;</span>
+
+  <div class="starfield-section hidden">
+    <div id="app"></div>
+    <div class="logo-container">
+        <img src="/img/Logo.png" alt="Logo" class="logo-image">
+    </div>
+
+    
+    <div class="info-container">
+      <H2>CA: 9n4vC1797R3ydnZ1rCUuM4tBiBBFeJ6g2aF3rhCrWeYL</H2>
+    </div>
+
+
+    <div class="social-container">
       
-      <p>COMMING SOON</p>
-      <div class="image-container">
-
-      </div>
+      <ul class="social-icons">
+        <li><a href="https://t.me/Lego_sol_werz_portal" target="_blank"><i class="fa-solid fa-paper-plane"></i></a></li>
+        <li><a href="https://x.com/Legosolwerz" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        <!-- Additional SVG logos -->
+        <li><a href="https://dexscreener.com/solana/3pybwlvgfqtxc1ccoexr3uxdgcdzbdirshbvsszabtwd" target="_blank"><img src="/img/dexscreen.png" alt="Dex Screener Logo"></a></li>
+        <li><a href="https://phantom.app/" target="_blank"><img src="/img/phantom.png" alt="Phantom Logo"></a></li>
+      </ul>
     </div>
+    <div class="gradient-overlay"></div>
   </div>
-
-  <div class="slider-container">
-    <div class="slider-content">
-      <div class="content first-content">
-        <!-- First content section -->
-        <div class="gif-container">   
-          <div class="salute-container">
-            <img src="/img/Logo.png" alt="Logo" class="logo">
-            <img src="img/Salute.gif" alt="Salute GIF" class="salute-gif">
-           
-            <p2>CA: 9n4vC1797R3ydnZ1rCUuM4tBiBBFeJ6g2aF3rhCrWeYL</p2>
-            
-            <div class="image-container">
-              <a href="https://dexscreener.com/solana/3pybwlvgfqtxc1ccoexr3uxdgcdzbdirshbvsszabtwd" target="_blank"><img src="/img/chart.png" alt="DexScreener" class="popup-image"></a>
-              <a href="https://t.me/Lego_sol_werz_portal" target="_blank"><img src="/img/Telegram-Logo.png" alt="Telegram" class="popup-image"></a>
-              <a href="https://twitter.com/Legosolwerz" target="_blank"><img src="/img/X-Logo.png" alt="Twitter" class="popup-image"></a>
-            </div>
-            <button class="join-button" onclick="window.open('https://jup.ag/swap/SOL-9n4vC1797R3ydnZ1rCUuM4tBiBBFeJ6g2aF3rhCrWeYL', '_blank')">Buy $LSW</button>
-           <!--  <button class="join-button" onclick="openPopup()">🏆CoMOONity Archivement🏆</button> -->
-            <button class="more-button" onclick="openSecondContent()">More...</button>
-          </div>
-        </div>
-      </div>
-      <div class="content second-content">
-        <!-- Second content section -->
-        <h2>Comming Soon</h2>
-        <h2>Comming Soon</h2>
-        <h2>Comming Soon</h2>
-        <button class="more-button" onclick="openFirstContent()">Back</button>
-        <p> </p>
-        
-      </div>
-    </div>
-    <div class="slider-nav">
-      <button class="prev-button">&lt;</button>
-      <button class="next-button">&gt;</button>
-    </div>
-  </div>
-
-</div>
-
-
-
-  <div id="overlay" class="overlay" style="display: flex;flex-direction: column;">
-    <img src="img/Logo.png" alt="Flying Ship" class="overlay-logo">
-    <img src="img/STP_Salute+Pill.png" alt="Flying Ship" class="overlay-st">
-    <button id="play-button">Enter</button>
-</div>
-
-<div class="image-container-bot">
-  <div class="image-wrapper">
-    <img src="img/BodenPalpetin.png" alt="Image 1" class="bottom-left resizable">
-    <span class="image-text">Boden Palpatine</span>
-  </div>
-  <div class="image-wrapper">
-    <img src="img/PepeMaul.png" alt="Image 2" class="bottom-left2 resizable">
-    <span class="image-text">Pepe Maul</span>
-  </div>
-  <div class="image-wrapper">
-    <img src="img/Scout.png" alt="Image 3" class="bottom-right resizable">
-    <span class="image-text">Scout</span>
-  </div>
-  <div class="image-wrapper">
-    <img src="img/STR-Rocket.png" alt="Image 3" class="bottom-right resizable">
-    <span class="image-text">Pump Tropper</span>
-  </div>
-</div>
-
-
-  <div class="marching-lineup">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-    <img src="/img/March.gif" alt="Marching" class="marching-gif">
-  </div>
-
-
-
   
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="particles-config.js"></script>
-  <script src="slider.js"></script>
-  <script src="popup.js"></script>
 
-  <script src="ship-animation.js"></script>
+
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
